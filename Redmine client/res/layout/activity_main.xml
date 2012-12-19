@@ -3,26 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <SlidingDrawer
-        android:id="@+id/slidingDrawer1"
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:content="@+id/content"
-        android:handle="@+id/handle" >
+        android:layout_below="@+id/textView1" >
 
-        <Button
-            android:id="@+id/handle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Handle" />
-
-        <LinearLayout
-            android:id="@+id/content"
+        <PagerTitleStrip
+            android:id="@+id/pager_title_strip"
             android:layout_width="match_parent"
-            android:layout_height="386dp" >
-        </LinearLayout>
-    </SlidingDrawer>
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#33b5e5"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#fff" >
+        </PagerTitleStrip>
+    </ViewPager>
 
 </RelativeLayout>
