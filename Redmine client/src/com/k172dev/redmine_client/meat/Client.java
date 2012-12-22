@@ -32,7 +32,7 @@ public class Client {
     /** Timeout (in ms) we specify for each http request */
     public static final int HTTP_REQUEST_TIMEOUT_MS = 30 * 1000;
     /** Base URL for server to authenticate against */
-    public static final String BASE_URL = "https://skib6.redmine.com";
+    public static final String BASE_URL = "https://redmine.skib6.ru";
     /** URI for authentication service */
     public static final String AUTH_URI = BASE_URL + "/login";
 
