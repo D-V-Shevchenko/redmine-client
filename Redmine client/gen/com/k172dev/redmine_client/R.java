@@ -13,17 +13,24 @@ public final class R {
     public static final class drawable {
         public static final int ic_action_search=0x7f020000;
         public static final int ic_launcher=0x7f020001;
+        public static final int logo_no_text=0x7f020002;
+        public static final int redmine=0x7f020003;
     }
     public static final class id {
-        public static final int button1=0x7f070000;
-        public static final int content=0x7f070002;
-        public static final int handle=0x7f070003;
-        public static final int menu_settings=0x7f070004;
-        public static final int slidingDrawer1=0x7f070001;
+        public static final int content=0x7f070007;
+        public static final int handle=0x7f070008;
+        public static final int menu_settings=0x7f070009;
+        public static final int message=0x7f070000;
+        public static final int message_bottom=0x7f070004;
+        public static final int ok_button=0x7f070005;
+        public static final int password_edit=0x7f070003;
+        public static final int slidingDrawer1=0x7f070006;
+        public static final int username_edit=0x7f070001;
+        public static final int username_fixed=0x7f070002;
     }
     public static final class layout {
-        public static final int activity_login=0x7f030000;
-        public static final int activity_main=0x7f030001;
+        public static final int login_activity=0x7f030000;
+        public static final int main_activity=0x7f030001;
     }
     public static final class menu {
         public static final int activity_login=0x7f060000;
@@ -32,9 +39,36 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
+        /**  Message shown in dialog if the username or password is invalid. 
+         */
+        public static final int login_activity_loginfail_text_both=0x7f040009;
+        /**  Message shown in dialog to prompt the user for their password 
+         */
+        public static final int login_activity_loginfail_text_pwmissing=0x7f04000b;
+        /**  Message shown in dialog if the password is invalid 
+         */
+        public static final int login_activity_loginfail_text_pwonly=0x7f04000a;
+        /** 
+        Message shown if the provided account doesn't support the current
+        activity.
+    
+         */
+        public static final int login_activity_newaccount_text=0x7f04000c;
+        /**  Button to sign in after entering username and password 
+         */
+        public static final int login_activity_ok_button=0x7f040007;
+        /**  Label above password EditText 
+         */
+        public static final int login_activity_password_label=0x7f040006;
+        /**  Label above username EditText 
+         */
+        public static final int login_activity_username_label=0x7f040005;
         public static final int menu_settings=0x7f040002;
         public static final int title_activity_login=0x7f040003;
         public static final int title_activity_main=0x7f040004;
+        /**  Message shown in progress dialog while app connects to the server 
+         */
+        public static final int ui_activity_authenticating=0x7f040008;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;
